@@ -3,8 +3,17 @@
 
 // end public
 // start navbar
+.nav-link {
+    color: $colornavbar;
+}
+
+.link_active,
 .nav-link:hover {
     color: $colorButton !important;
+}
+
+.iconSize {
+    font-size: 12px;
 }
 
 // end navbar

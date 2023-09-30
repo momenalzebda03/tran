@@ -1,3 +1,12 @@
+.nav-link {
+  color: #552633;
+}
+
+.link_active,
 .nav-link:hover {
   color: #FF5D22 !important;
+}
+
+.iconSize {
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
