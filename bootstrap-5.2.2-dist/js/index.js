@@ -3,9 +3,24 @@ for (let i = 0; i < tag_header.length; i++) {
   var chekd = tag_header[i];
   chekd.addEventListener("click", function () {
     for (let i = 0; i < tag_header.length; i++) {
-      console.log(tag_header[i]);
       tag_header[i].classList.remove("link_active");
     }
     this.classList.add("link_active");
   });
 }
+
+var divMenu = document.getElementById("iconMenu");
+var boolen = true;
+
+iconMenu.addEventListener("click", function () {
+  var iconMenu = document.querySelector(".iconMenu");
+  if (boolen == true) {
+    iconMenu.classList.remove("fa-bars");
+    iconMenu.classList.add("fa-xmark");
+    boolen = false;
+  } else {
+    iconMenu.classList.remove("fa-xmark");
+    iconMenu.classList.add("fa-bars");
+    boolen = true;
+  }
+});
