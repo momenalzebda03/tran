@@ -24,3 +24,14 @@ iconMenu.addEventListener("click", function () {
     boolen = true;
   }
 });
+
+window.addEventListener("scroll", function () {
+  var scrollPosition = window.scrollY;
+  var section = document.querySelector(".divArrow");
+  if (scrollPosition >= 200) {
+    section.classList.remove("d-none");
+    section.classList.add("d-flex");
+  } else if (scrollPosition <= 200) {
+    section.classList.add("d-none");
+  }
+});

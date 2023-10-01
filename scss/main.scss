@@ -1,13 +1,20 @@
 @import "color";
-// start public
 
-// end public
-// start navbar
+// start public
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorButton;
+}
+
 .nav-link {
     letter-spacing: 1px;
     color: $colornavbar;
 }
 
+.hoverLink:hover,
 .link_active,
 .nav-link:hover {
     color: $colorButton !important;
@@ -44,27 +51,45 @@
 }
 
 .buttonNavbar:hover {
-    margin-top: -10px;
+    transform: translate(0, -5px);
 }
 
-.iconMenu {
+.tagSize {
+    font-size: 50px;
+}
+
+.colorText {
+    color: $colorText;
+}
+
+// end public
+// start navbar
+body header {
+    z-index: 1;
+}
+
+body header .container button .iconMenu {
     color: $colorButton !important;
 }
 
-.navbar-toggler:focus {
+body header .container .navbar-toggler:focus {
     box-shadow: 0 0 0 var(--white);
 }
 
-.divBoxBox,
-.divBoxNavbar {
+body header .container div .ulHeight .hoverList div .divBoxNavbar {
+    min-width: 20%;
+}
+
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox,
+body header .container div .ulHeight .hoverList div .divBoxNavbar {
     border-top: 4px solid $colorButton;
 }
 
-.link_hover {
+body header .container div .ulHeight .hoverList .link_hover {
     transition: 0.5s;
 }
 
-.hoverList:hover {
+body header .container div .ulHeight .hoverList:hover {
     a {
 
         .iconSize,
@@ -74,15 +99,11 @@
     }
 
     .divBoxNavbar {
-        display: block !important;
+        display: flex !important;
     }
 }
 
-.liBetween {
-    width: 110%;
-}
-
-.liBetween:hover {
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween:hover {
 
     .iconSize,
     .hoverBetween {
@@ -94,10 +115,119 @@
     }
 }
 
-.divBoxBox {
-    min-width: 93%;
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox {
+    width: 220px;
     margin-top: 100px;
-    left: -175px;
+    left: -220px;
 }
 
 // end navbar
+// start main
+body main {
+    background: linear-gradient(90deg, $colorMainOne, $colorMainTow);
+    height: 110vh;
+}
+
+// end main
+// start arrawTop
+body section a .divArrow {
+    right: 25px;
+    bottom: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: $colorCline;
+    transition: 0.3s;
+}
+
+body section a .divArrow:hover {
+    transform: translate(0, -10px);
+    background-color: $colorButton;
+}
+
+// end arrawTop
+// start Services
+body .sectionServices {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: $colorServices;
+}
+
+body .sectionServices .container .row div div .hoverReadMore .iconLeft {
+    margin-top: 5.5px;
+}
+
+body .sectionServices .container .row div div .hoverReadMore {
+
+    .iconLeft,
+    span {
+        transition: 0.3s;
+    }
+}
+
+body .sectionServices .container .row div div .hoverReadMore:hover {
+    color: $colorBlack !important;
+
+    span {
+        transform: translate(5px, 0);
+    }
+
+    .iconLeft {
+        transform: translate(-110px, 0);
+    }
+}
+
+// end Services
+// start about us
+.pSize {
+    font-size: 17px;
+}
+
+// end about us
+// start media
+@media(max-width: 990px) {
+    body header .container div .ulHeight .hoverList div .divBoxNavbar {
+        display: block !important;
+        position: relative !important;
+        border: transparent;
+        width: 100%;
+        box-shadow: 0 0 10px #ccc;
+    }
+
+    body header .container div .ulHeight {
+        overflow: auto;
+        height: 90vh;
+    }
+
+    body header .container div .ulHeight .hoverList {
+        width: 95%;
+    }
+
+    body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox {
+        width: 90%;
+        border-top: transparent;
+        box-shadow: 0 0 10px #ccc;
+        margin-top: 10px;
+        left: 0;
+        position: relative !important;
+        display: block !important;
+    }
+
+    .tagSize {
+        font-size: 18px;
+    }
+
+    body main .container .row div div .divWidth {
+        width: 40% !important;
+    }
+
+    .width100 {
+        width: 100% !important;
+    }
+
+    body .sectionServices {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+// end media

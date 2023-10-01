@@ -1,8 +1,17 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF5D22;
+}
+
 .nav-link {
   letter-spacing: 1px;
   color: #552633;
 }
 
+.hoverLink:hover,
 .link_active,
 .nav-link:hover {
   color: #FF5D22 !important;
@@ -39,48 +48,147 @@
 }
 
 .buttonNavbar:hover {
-  margin-top: -10px;
+  transform: translate(0, -5px);
 }
 
-.iconMenu {
+.tagSize {
+  font-size: 50px;
+}
+
+.colorText {
+  color: #8e8e9a;
+}
+
+body header {
+  z-index: 1;
+}
+
+body header .container button .iconMenu {
   color: #FF5D22 !important;
 }
 
-.navbar-toggler:focus {
+body header .container .navbar-toggler:focus {
   box-shadow: 0 0 0 var(--white);
 }
 
-.divBoxBox,
-.divBoxNavbar {
+body header .container div .ulHeight .hoverList div .divBoxNavbar {
+  min-width: 20%;
+}
+
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox,
+body header .container div .ulHeight .hoverList div .divBoxNavbar {
   border-top: 4px solid #FF5D22;
 }
 
-.link_hover {
+body header .container div .ulHeight .hoverList .link_hover {
   transition: 0.5s;
 }
 
-.hoverList:hover a .iconSize,
-.hoverList:hover a span {
+body header .container div .ulHeight .hoverList:hover a .iconSize,
+body header .container div .ulHeight .hoverList:hover a span {
   color: #FF5D22;
 }
-.hoverList:hover .divBoxNavbar {
-  display: block !important;
+body header .container div .ulHeight .hoverList:hover .divBoxNavbar {
+  display: flex !important;
 }
 
-.liBetween {
-  width: 110%;
-}
-
-.liBetween:hover .iconSize,
-.liBetween:hover .hoverBetween {
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween:hover .iconSize,
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween:hover .hoverBetween {
   color: #FF5D22 !important;
 }
-.liBetween:hover .divBoxBox {
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween:hover .divBoxBox {
   display: block !important;
 }
 
-.divBoxBox {
-  min-width: 93%;
+body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox {
+  width: 220px;
   margin-top: 100px;
-  left: -175px;
+  left: -220px;
+}
+
+body main {
+  background: linear-gradient(90deg, #65258A, #DF0768);
+  height: 110vh;
+}
+
+body section a .divArrow {
+  right: 25px;
+  bottom: 15px;
+  width: 45px;
+  height: 45px;
+  background-color: #221638;
+  transition: 0.3s;
+}
+
+body section a .divArrow:hover {
+  transform: translate(0, -10px);
+  background-color: #FF5D22;
+}
+
+body .sectionServices {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F1F8FB;
+}
+
+body .sectionServices .container .row div div .hoverReadMore .iconLeft {
+  margin-top: 5.5px;
+}
+
+body .sectionServices .container .row div div .hoverReadMore .iconLeft,
+body .sectionServices .container .row div div .hoverReadMore span {
+  transition: 0.3s;
+}
+
+body .sectionServices .container .row div div .hoverReadMore:hover {
+  color: black !important;
+}
+body .sectionServices .container .row div div .hoverReadMore:hover span {
+  transform: translate(5px, 0);
+}
+body .sectionServices .container .row div div .hoverReadMore:hover .iconLeft {
+  transform: translate(-110px, 0);
+}
+
+.pSize {
+  font-size: 17px;
+}
+
+@media (max-width: 990px) {
+  body header .container div .ulHeight .hoverList div .divBoxNavbar {
+    display: block !important;
+    position: relative !important;
+    border: transparent;
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+  }
+  body header .container div .ulHeight {
+    overflow: auto;
+    height: 90vh;
+  }
+  body header .container div .ulHeight .hoverList {
+    width: 95%;
+  }
+  body header .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBoxBox {
+    width: 90%;
+    border-top: transparent;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 10px;
+    left: 0;
+    position: relative !important;
+    display: block !important;
+  }
+  .tagSize {
+    font-size: 18px;
+  }
+  body main .container .row div div .divWidth {
+    width: 40% !important;
+  }
+  .width100 {
+    width: 100% !important;
+  }
+  body .sectionServices {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
