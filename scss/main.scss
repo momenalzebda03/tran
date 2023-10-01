@@ -4,6 +4,7 @@
 // end public
 // start navbar
 .nav-link {
+    letter-spacing: 1px;
     color: $colornavbar;
 }
 
@@ -54,6 +55,7 @@
     box-shadow: 0 0 0 var(--white);
 }
 
+.divBoxBox,
 .divBoxNavbar {
     border-top: 4px solid $colorButton;
 }
@@ -63,9 +65,39 @@
 }
 
 .hoverList:hover {
+    a {
+
+        .iconSize,
+        span {
+            color: $colorButton;
+        }
+    }
+
     .divBoxNavbar {
         display: block !important;
     }
+}
+
+.liBetween {
+    width: 110%;
+}
+
+.liBetween:hover {
+
+    .iconSize,
+    .hoverBetween {
+        color: $colorButton !important;
+    }
+
+    .divBoxBox {
+        display: block !important;
+    }
+}
+
+.divBoxBox {
+    min-width: 93%;
+    margin-top: 100px;
+    left: -175px;
 }
 
 // end navbar
