@@ -409,38 +409,65 @@ body .container .row div .hoverTop .imageRounded {
   border-radius: 8px 8px 0 0;
 }
 
-.sectionFooter {
+body .sectionFooter {
+  margin-top: 120px;
   background-color: #fefcf8;
 }
 
-.sectionFooter::before {
+body .sectionFooter::before {
   content: "";
   position: absolute;
   background-image: url("/image/footer-map.png");
-  background-size: 50% 220px;
+  background-size: 50% 320px;
   width: 50%;
   left: 30%;
-  height: 220px;
+  height: 320px;
+  animation: image_animation 10s infinite;
 }
 
-.listColor {
+@keyframes image_animation {
+  0% {
+    left: 28%;
+  }
+  50% {
+    left: 30%;
+  }
+  100% {
+    left: 28%;
+  }
+}
+body .sectionFooter .container .row div ul ul li .listColor {
   padding: 4px 9px;
   background-color: rgb(98, 98, 98);
 }
 
-.hoverFooter {
+body .sectionFooter .container .row div ul ul li .listColor:hover {
+  background-color: #FF5D22;
+}
+
+body .sectionFooter .container .row div ul li .hoverFooter {
   font-size: 18px;
 }
 
-.hoverFooter:hover {
+body .sectionFooter .container .row div ul li .hoverFooter:hover {
   color: #FF5D22;
 }
-.hoverFooter:hover a {
+body .sectionFooter .container .row div ul li .hoverFooter:hover a {
   color: #FF5D22;
 }
 
-.listColor:hover {
-  background-color: #FF5D22;
+.container div ul .liBefore::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(98, 98, 98);
+  width: 2px;
+  height: 22px;
+  top: 2px;
+  left: -13px;
+}
+
+.container div ul .liBefore:first-child:before {
+  display: none;
 }
 
 @media (max-width: 990px) {

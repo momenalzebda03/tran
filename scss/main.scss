@@ -466,30 +466,51 @@ body .container .row div .hoverTop .imageRounded {
 
 // end valuable
 // start footer
-.sectionFooter {
+body .sectionFooter {
+    margin-top: 120px;
     background-color: $colorFooter;
 }
 
-.sectionFooter::before {
+body .sectionFooter::before {
     content: "";
     position: absolute;
     background-image: url("/image/footer-map.png");
-    background-size: 50% 220px;
+    background-size: 50% 320px;
     width: 50%;
     left: 30%;
-    height: 220px;
+    height: 320px;
+    animation: image_animation 10s infinite;
+
 }
 
-.listColor {
+@keyframes image_animation {
+    0% {
+        left: 28%;
+    }
+
+    50% {
+        left: 30%;
+    }
+
+    100% {
+        left: 28%;
+    }
+}
+
+body .sectionFooter .container .row div ul ul li .listColor {
     padding: 4px 9px;
     background-color: $colorIconFooter;
 }
 
-.hoverFooter {
+body .sectionFooter .container .row div ul ul li .listColor:hover {
+    background-color: $colorButton;
+}
+
+body .sectionFooter .container .row div ul li .hoverFooter {
     font-size: 18px;
 }
 
-.hoverFooter:hover {
+body .sectionFooter .container .row div ul li .hoverFooter:hover {
     color: $colorButton;
 
     a {
@@ -497,8 +518,18 @@ body .container .row div .hoverTop .imageRounded {
     }
 }
 
-.listColor:hover {
-    background-color: $colorButton;
+.container div ul .liBefore::before {
+    content: "";
+    position: absolute;
+    background-color: $colorIconFooter;
+    width: 2px;
+    height: 22px;
+    top: 2px;
+    left: -13px;
+}
+
+.container div ul .liBefore:first-child:before {
+    display: none;
 }
 
 // end footer
