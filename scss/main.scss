@@ -400,39 +400,108 @@ body .sectionClients .container div .caourselBottom .beforeImage::before {
 
 // end clients
 // start plan
-.sizeMoney {
+body .sectionServices .container .row div .cardMoney div .sizeMoney {
     font-size: 40px;
 }
 
-.sizeSpan {
+body .sectionServices .container .row div .cardMoney {
+    transition: 0.4s;
+}
+
+body .sectionServices .container .row div .cardMoney:hover {
+    margin-top: -10px;
+    box-shadow: 0 0 10px $colorShdow;
+}
+
+body .sectionServices .container .row div .cardMoney div .sizeSpan {
     font-size: 20px;
 }
 
-.sizeMoney::before {
-    content: "/per week";
-    position: absolute;
-    color: $colorIcon;
-    font-size: 15px;
-    margin-left: 75px;
-    bottom: 15px;
+body .sectionServices .container .row div .cardMoney div .spanMoney {
+    bottom: 13px;
 }
 
-.listSize {
+body .sectionServices .container .row div .cardMoney ul .listSize {
     font-size: 17px;
 }
 
-.iconCheckSize {
-    width: 18px;
-    height: 18px;
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSize {
+    width: 15px;
+    height: 15px;
+    font-size: 5px;
     background-color: $colorGreen;
-    font-size: 7px;
 }
 
-.iconCheckSizeFalse {
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSizeFalse {
     background-color: $colorRed !important;
 }
 
 // end plan
+// start projects1
+body .sectionClients .container .row div div div div .buttonNavbarWhite::before {
+    background-color: $colorWhite !important;
+}
+
+body .sectionClients .container .row div div div div .buttonNavbarWhite:hover {
+    color: $colorBlack !important;
+}
+
+// end projects1
+// start valuable
+body .container .row div .hoverTop {
+    transition: 0.3s;
+}
+
+body .container .row div .hoverTop:hover {
+    margin-top: -10px;
+}
+
+body section .container .row div div div div div .imageValuable {
+    width: 40px;
+}
+
+body .container .row div .hoverTop .imageRounded {
+    border-radius: 8px 8px 0 0;
+}
+
+// end valuable
+// start footer
+.sectionFooter {
+    background-color: $colorFooter;
+}
+
+.sectionFooter::before {
+    content: "";
+    position: absolute;
+    background-image: url("/image/footer-map.png");
+    background-size: 50% 220px;
+    width: 50%;
+    left: 30%;
+    height: 220px;
+}
+
+.listColor {
+    padding: 4px 9px;
+    background-color: $colorIconFooter;
+}
+
+.hoverFooter {
+    font-size: 18px;
+}
+
+.hoverFooter:hover {
+    color: $colorButton;
+
+    a {
+        color: $colorButton;
+    }
+}
+
+.listColor:hover {
+    background-color: $colorButton;
+}
+
+// end footer
 // start media
 @media(max-width: 990px) {
     body header .container div .ulHeight .hoverList div .divBoxNavbar {

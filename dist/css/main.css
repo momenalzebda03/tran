@@ -349,36 +349,98 @@ body .sectionClients .container div .caourselBottom .beforeImage::before {
   display: none;
 }
 
-.sizeMoney {
+body .sectionServices .container .row div .cardMoney div .sizeMoney {
   font-size: 40px;
 }
 
-.sizeSpan {
+body .sectionServices .container .row div .cardMoney {
+  transition: 0.4s;
+}
+
+body .sectionServices .container .row div .cardMoney:hover {
+  margin-top: -10px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+body .sectionServices .container .row div .cardMoney div .sizeSpan {
   font-size: 20px;
 }
 
-.sizeMoney::before {
-  content: "/per week";
-  position: absolute;
-  color: #707FA1;
-  font-size: 15px;
-  margin-left: 75px;
-  bottom: 15px;
+body .sectionServices .container .row div .cardMoney div .spanMoney {
+  bottom: 13px;
 }
 
-.listSize {
+body .sectionServices .container .row div .cardMoney ul .listSize {
   font-size: 17px;
 }
 
-.iconCheckSize {
-  width: 18px;
-  height: 18px;
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSize {
+  width: 15px;
+  height: 15px;
+  font-size: 5px;
   background-color: green;
-  font-size: 7px;
 }
 
-.iconCheckSizeFalse {
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSizeFalse {
   background-color: red !important;
+}
+
+body .sectionClients .container .row div div div div .buttonNavbarWhite::before {
+  background-color: white !important;
+}
+
+body .sectionClients .container .row div div div div .buttonNavbarWhite:hover {
+  color: black !important;
+}
+
+body .container .row div .hoverTop {
+  transition: 0.3s;
+}
+
+body .container .row div .hoverTop:hover {
+  margin-top: -10px;
+}
+
+body section .container .row div div div div div .imageValuable {
+  width: 40px;
+}
+
+body .container .row div .hoverTop .imageRounded {
+  border-radius: 8px 8px 0 0;
+}
+
+.sectionFooter {
+  background-color: #fefcf8;
+}
+
+.sectionFooter::before {
+  content: "";
+  position: absolute;
+  background-image: url("/image/footer-map.png");
+  background-size: 50% 220px;
+  width: 50%;
+  left: 30%;
+  height: 220px;
+}
+
+.listColor {
+  padding: 4px 9px;
+  background-color: rgb(98, 98, 98);
+}
+
+.hoverFooter {
+  font-size: 18px;
+}
+
+.hoverFooter:hover {
+  color: #FF5D22;
+}
+.hoverFooter:hover a {
+  color: #FF5D22;
+}
+
+.listColor:hover {
+  background-color: #FF5D22;
 }
 
 @media (max-width: 990px) {
