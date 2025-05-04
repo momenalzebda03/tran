@@ -16,10 +16,10 @@ iconMenu.addEventListener("click", function () {
   var iconMenu = document.querySelector(".iconMenu");
   if (boolen == true) {
     iconMenu.classList.remove("fa-bars");
-    iconMenu.classList.add("fa-xmark");
+    iconMenu.classList.add("fa-times");
     boolen = false;
   } else {
-    iconMenu.classList.remove("fa-xmark");
+    iconMenu.classList.remove("fa-times");
     iconMenu.classList.add("fa-bars");
     boolen = true;
   }
