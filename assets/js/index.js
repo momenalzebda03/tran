@@ -36,16 +36,31 @@ window.addEventListener("scroll", function () {
   }
 });
 
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel-clients").owlCarousel({
   loop: true,
-  margin: 10,
-  nav: true,
+  margin: 40,
   responsive: {
     0: {
       items: 1,
     },
-    1000: {
+    600: {
       items: 2,
+    },
+  },
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 40,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 6,
     },
   },
 });

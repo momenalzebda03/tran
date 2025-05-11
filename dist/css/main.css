@@ -54,6 +54,18 @@
   color: #8e8e9a;
 }
 
+.section-margin {
+  margin-top: 70px;
+}
+
+.mouse-pointer {
+  cursor: pointer;
+}
+
+.height-about-us {
+  height: 100%;
+}
+
 body nav {
   z-index: 2;
 }
@@ -102,6 +114,324 @@ body nav .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBo
   left: -220px;
 }
 
+body main {
+  background: linear-gradient(90deg, #65258A, #DF0768);
+  height: 100vh;
+}
+
+body main div div div div .size-image-main {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body section a .divArrow {
+  right: 25px;
+  bottom: 15px;
+  width: 45px;
+  height: 45px;
+  background-color: #221638;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+body section a .divArrow:hover {
+  background-color: #FF5D22;
+}
+
+body .sectionServices {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F1F8FB;
+}
+
+body .sectionServices .container .row div div .hoverReadMore .iconLeft,
+body .sectionServices .container .row div div .hoverReadMore span {
+  transition: 0.3s;
+}
+
+body .sectionServices .container .row div div .hoverReadMore:hover {
+  color: black !important;
+}
+body .sectionServices .container .row div div .hoverReadMore:hover span {
+  transform: translate(5px, 0);
+}
+body .sectionServices .container .row div div .hoverReadMore:hover .iconLeft {
+  transform: translate(-110px, 0);
+}
+
+body .section-margin div div div .size-image-pastures {
+  width: 100% !important;
+  height: 80px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .sectionAbout .container div .row div div .pSize {
+  font-size: 17px;
+}
+
+body .sectionAbout .container div .row div div .imageWidth {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .sectionAbout .container div .rowReverse {
+  flex-direction: row-reverse;
+}
+body .sectionAbout .container div .rowReverse div div {
+  text-align: left !important;
+}
+
+body .sectionAbout .container div .row div ul li .divProblems {
+  background-color: #F1F8FB;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+body .sectionAbout .container div .row div ul li .divProblems::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FF5D22;
+  transition: 0.5s;
+}
+
+body .sectionAbout .container div .row div ul li .divProblems:hover div span {
+  color: white;
+}
+body .sectionAbout .container div .row div ul li .divProblems:hover div .iconCheck {
+  color: black !important;
+  background-color: white;
+}
+
+body .sectionAbout .container div .row div ul li .divProblems:hover::before {
+  width: 100%;
+}
+
+body .sectionAbout .container div .row div ul li .divProblems div .iconCheck {
+  transition: 0.4s;
+  background-color: #FF5D22;
+}
+
+body .sectionAbout div .row-gap-aboutUs {
+  row-gap: 130px;
+}
+
+body .sectionNumbers .style-image-number {
+  z-index: -1;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .sectionNumbers div ul li div div .size-image-number {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body section .container .rowGap {
+  row-gap: 50px;
+}
+
+body section .container .rowGap div .card-project:hover div .hoverImage {
+  opacity: 1;
+}
+
+body section .container .rowGap div .card-project .hoverImage {
+  top: 10px;
+  left: 10px;
+  width: 95%;
+  height: 95%;
+  background-color: #FF5D22;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+body section .container .rowGap div .card-project .hoverImage .divPlus {
+  width: 40px;
+  height: 40px;
+}
+
+body section .container .rowGap div .card-project .card-body {
+  background-color: rgba(248, 245, 245, 0.816);
+}
+
+body section .container .rowGap div .card-project .card-img-top {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body section .container .row div .cardHover:hover .divBoxIcon {
+  bottom: 100px;
+  opacity: 1;
+}
+
+body section .container .row div .cardHover .divBoxIcon {
+  transition: 0.3s;
+  bottom: 90px;
+  opacity: 0;
+}
+
+body section .container .row div .cardHover .divBoxIcon .divIcon {
+  background-color: rgba(248, 245, 245, 0.816);
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+
+body section .container .row div .cardHover .divBoxIcon .divIcon:hover {
+  color: white !important;
+  background-color: #FF5D22;
+}
+
+body .section-margin div div div .cardHover div .size-image-team {
+  width: 100%;
+  height: 490px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .sectionClients {
+  background-color: #221638;
+}
+
+body .sectionClients .container div .caourselBottom {
+  padding-bottom: 30px !important;
+}
+
+body .sectionClients .container div .caourselBottom .imageSaying {
+  top: -30px;
+  width: 75px !important;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #E3FBFF;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding-top: 30px;
+}
+
+body .sectionServices .container .row div .cardMoney div .sizeMoney {
+  font-size: 40px;
+}
+
+body .sectionServices .container .row div .cardMoney {
+  transition: 0.4s;
+}
+
+body .sectionServices .container .row div .cardMoney:hover {
+  margin-top: -10px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+body .sectionServices .container .row div .cardMoney div .sizeSpan {
+  font-size: 20px;
+}
+
+body .sectionServices .container .row div .cardMoney div .spanMoney {
+  bottom: 13px;
+}
+
+body .sectionServices .container .row div .cardMoney ul .listSize {
+  font-size: 17px;
+}
+
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSize {
+  width: 15px;
+  height: 15px;
+  font-size: 5px;
+  background-color: green;
+}
+
+body .sectionServices .container .row div .cardMoney ul li .iconCheckSizeFalse {
+  background-color: red !important;
+}
+
+body .sectionClients .container .row div div div div .buttonNavbarWhite::before {
+  background-color: white !important;
+}
+
+body .sectionClients .container .row div div div div .buttonNavbarWhite:hover {
+  color: black !important;
+}
+
+body .sectionClients div div div .size-image-project-one {
+  width: 90%;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .container .row div .hoverTop {
+  transition: 0.3s;
+}
+
+body .container .row div .hoverTop:hover {
+  margin-top: -10px;
+}
+
+body section .container .row div div div div div .imageValuable {
+  width: 40px;
+}
+
+body .container .row div .hoverTop .imageRounded {
+  border-radius: 8px 8px 0 0;
+}
+
+.size-footer-map {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .sectionFooter .container .row div ul li .listColor {
+  padding: 4px 9px;
+  background-color: rgb(98, 98, 98);
+  color: white;
+}
+
+body .sectionFooter .container .row div ul li .listColor:hover {
+  background-color: #FF5D22;
+}
+
+body .sectionFooter .container .row div li .hoverFooter {
+  font-size: 18px;
+}
+
+body .sectionFooter .container .row div li .hoverFooter:hover {
+  color: #FF5D22;
+}
+body .sectionFooter .container .row div li .hoverFooter:hover a {
+  color: #FF5D22;
+}
+
+.container div ul .liBefore::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(98, 98, 98);
+  width: 2px;
+  height: 22px;
+  top: 2px;
+  left: -13px;
+}
+
+.container div ul .liBefore:first-child:before {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   body nav .container div .ulHeight {
     gap: 10px !important;
@@ -118,5 +448,32 @@ body nav .container div .ulHeight .hoverList div .divBoxNavbar .liBetween .divBo
   body nav .container div .ulHeight .hoverList,
   body nav .container div .ulHeight .hoverList .divBoxNavbar {
     width: 100%;
+  }
+  .tagSize {
+    font-size: 18px;
+  }
+  body main div div div div .size-image-main {
+    width: 100%;
+    height: 100%;
+  }
+  body main {
+    background: linear-gradient(90deg, #65258A, #DF0768);
+    height: 90vh;
+  }
+  .width100 {
+    width: 100% !important;
+  }
+  .row-gap-mobile {
+    row-gap: 20px;
+  }
+  body .sectionAbout div .row-gap-aboutUs {
+    row-gap: 30px;
+  }
+  body .sectionAbout .container div .row div div .imageWidth {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .container .row div .hoverTop:hover {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */
